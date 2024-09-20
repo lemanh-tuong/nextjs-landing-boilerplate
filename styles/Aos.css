@@ -1,0 +1,29 @@
+@keyframes rotate-right-animation {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.aos-animate[data-aos="rotate-right"] {
+  /* Apply the rotate animation */
+  animation-name: rotate-right-animation;
+  animation-duration: 1s; /* You can adjust the duration as needed */
+  animation-fill-mode: both;
+}
+
+@keyframes rotate-left-animation {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.aos-animate[data-aos="rotate-left"] {
+  /* Apply the rotate animation */
+  animation-name: rotate-left-animation;
+  animation-duration: 1s; /* You can adjust the duration as needed */
+  animation-fill-mode: both;
+}

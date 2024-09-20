@@ -1,19 +1,25 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './packages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '0.75rem', // Default padding for all screens
+        sm: '2rem', // Padding for small screens
+      },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bodyBg: '#1D1A1A',
+        bodyText: '#e3e3e3',
       },
     },
   },
-  plugins: [],
-};
-export default config;
+} satisfies Config;
