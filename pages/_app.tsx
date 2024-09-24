@@ -9,9 +9,9 @@ import 'aos/dist/aos.css';
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
-      // disable: 'mobile',
-      offset: 100,
+      duration: 600,
+      disable: false,
+      offset: 300,
       once: true,
     });
   }, []);
